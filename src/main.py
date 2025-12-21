@@ -1,20 +1,12 @@
-from src.power import power_function
-from src.constants import SAMPLE_CONSTANT
-
-
-def main() -> None:
-    """
-    Обязательнная составляющая программ, которые сдаются. Является точкой входа в приложение
-    :return: Данная функция ничего не возвращает
-    """
-
-    target, degree = map(int, input("Введите два числа разделенные пробелом: ").split(" "))
-
-    result = power_function(target=target, power=degree)
-
-    print(result)
-
-    print(SAMPLE_CONSTANT)
-
-if __name__ == "__main__":
-    main()
+from book_class import Book
+from book_collection import BookCollection
+from IndexCollection import IndexCollection
+from Library import Library
+from simulation import run_simulation
+print("Привет! Это симуляция библиотеки. Здесь можно рандомно выполнить одно из следующих действий:")
+print("добавление новой ĸниги, удаление случайной ĸниги, поисĸ по рандомному автору, обновление индеĸса, попытĸа получить ĸнигу, ĸоторой нет")
+print("Если одно из выпавших действий - попытка получить несуществующую книгу, программа завершает свою работу.")
+print("")
+seed = int(input("Введите количество рандомных действий, которые хотите выполнить: "))
+library = Library()
+run_simulation(library, seed)
