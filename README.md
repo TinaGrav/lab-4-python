@@ -1,4 +1,4 @@
-# Шаблон репозитория, для успешной сдачи лабораторных работ.
+# Лабораторная работа 4  -  Карданова Екатерина 
 
 ## Введение
 Данный шаблон является примером оформления кода для сдачи лабораторных работ.
@@ -9,11 +9,24 @@
 
  <pre>
     .
-    ├── lab<# лабораторной работы>             # Кодовая база вашей лабораторной работы
+    ├── lab-4            # Кодовая база вашей лабораторной работы
     │   ├── src/                               # Исходный код
+    |   │   ├── main.py                        # Часть пользователя 
+    |   │   ├── book_class.py                  # Класс Book
+    |   │   ├── book_collection.py             # Класс Book collection
+    |   │   ├── IndexCollection.py             # Класс Index collection
+    |   │   ├── Library.py                     # Класс Library
+    |   │   ├── simul_functions.py             # Вспомогательные функции для симуляции
+    |   │   ├── simulation.py                  # Функция симуляции 
+    |   │   ├── author_list.txt                # Список авторов для симуляции
+    |   │   ├── book_list.txt                  # Список книг для работы симуляции
     │   ├── tests/                             # Unit тесты
+    |   │   ├── test_book.py                   # Тесты класса Book
+    |   │   ├── test_book_collection.py        # Тесты класса Book collection
+    |   │   ├── test_index_collection.py       # Тесты класса Index collection
+    |   │   ├── test_library.py                # Тесты класса Library
+    |   │   ├── test_simulation.py             # Тесты работы симуляции 
     │   ├── uv.lock                            # зависимости вашего проекта
-    │   ├── report.pdf                         # Отчет
     │   ├── .gitignore                         # git ignore файл
     │   ├──.pre-commit-config.yaml             # Средства автоматизации проверки кодстайла
     │   ├── README.md                          # Описание вашего проекта, с описанием файлов и с титульником о том,
