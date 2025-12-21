@@ -31,6 +31,7 @@
     |   │   ├── test_index_collection.py       # Тесты класса Index collection
     |   │   ├── test_library.py                # Тесты класса Library
     |   │   ├── test_simulation.py             # Тесты работы симуляции 
+    │   ├── photos_lab5                        # Фотографии для лабораторной работы 5
     │   ├── uv.lock                            # зависимости вашего проекта
     │   ├── LAB-5.md                           # Лабораторная работа 5
     │   ├── .gitignore                         # git ignore файл
