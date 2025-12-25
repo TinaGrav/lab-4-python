@@ -41,16 +41,30 @@
 </pre>
 
 ## Инструкция к использованию
-
 ### Установить репозиторий
-```pip install -e https://github.com/TinaGrav/lab-4-python``` \
-```cd src/lab-4-python```
+git clone https://github.com/TinaGrav/lab-4-python
+ 
 
-### Запустить
-```python -m src.main```
+cd lab-4-python
+ - перейти в папку с содержимым лабы
+
+### Запустить 
+Для запсука main.py
+
+cd src
+
+python main.py
+
 После запуска программы пользователь увидит приветсвенное сообщение и инструкцию по работе с программой. 
 
-Для запуска тестов:  ```pytests tests -v```
+Для запуска тестов: 
+
+Windows: 
+set PYTHONPATH=src && pytest
+ - при этом необходимо находится в корневой папке проекта lab-4-python
+
+Linux/Mac: 
+PYTHONPATH=src pytest
 
 # Допущения
 - Пользователь вводит количество шагов симуляции, которые будут выполнены
